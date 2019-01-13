@@ -1,0 +1,96 @@
+%! TEX program = lualatex
+\documentclass[compress,aspectratio=43]{beamer}
+
+\usetheme{Hamburg}
+
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+
+\usepackage{fontspec}
+\usepackage{appendixnumberbeamer}
+%\usepackage{lmodern}
+
+%\usepackage[english]{babel}
+\usepackage[ngerman,english]{babel}
+\usepackage{csquotes}
+\usepackage{eurosym}
+\usepackage{listings}
+\usepackage{lstautogobble}
+\usepackage{microtype}
+\usepackage{textcomp}
+\usepackage{units}
+\usepackage[ngerman,english]{selnolig}
+
+\usepackage[
+  backend=biber,
+  bibencoding=utf8,
+  style=alphabetic
+]{biblatex}
+\addbibresource{literature.bib}
+\usepackage{dirtytalk}
+\usepackage{epigraph}
+
+\usepackage{placeins}
+
+\usepackage[many]{tcolorbox}
+
+\usepackage{todonotes}
+\usepackage{physics}
+
+\lstset{%
+	basicstyle=\ttfamily\footnotesize,
+	frame=single,
+	numbers=left,
+	language=C,
+	breaklines=true,
+	breakatwhitespace=true,
+	postbreak=\hbox{$\hookrightarrow$ },
+	showstringspaces=false,
+	autogobble=true,
+	upquote=true,
+	tabsize=4,
+	captionpos=b,
+	morekeywords={int8_t,uint8_t,int16_t,uint16_t,int32_t,uint32_t,int64_t,uint64_t,size_t,ssize_t,off_t,intptr_t,uintptr_t,mode_t}
+}
+
+\title{Witty Catch Phrase: Bunch of More Words}
+%\subtitle{Kolloquium}
+\author{Leonhard Reichenbach}
+\institute{Arbeitsbereich XY\\Fachbereich Informatik\\Fakultät für Mathematik, Informatik und Naturwissenschaften\\Universität Hamburg}
+\date{YYYY{--}MM{--}DD}
+
+\titlegraphic{\includegraphics[width=0.75\textwidth]{logo}}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage%
+\end{frame}
+
+\begin{frame}
+	\frametitle{Agenda}
+	\tableofcontents[hidesubsections]
+\end{frame}
+
+\section{The Interesting Content}
+\begin{frame}
+    \frametitle{Insert Content Here}
+    Content
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+	\frametitle{References}
+    \printbibliography%
+\end{frame}
+
+\begin{frame}
+    \centering\Huge
+    Further Questions?
+\end{frame}
+\appendix
+\begin{frame}
+    \frametitle{Backup slide}
+\end{frame}
+
+
+\end{document}
